@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aahoo</title>
+</head>
+<body>
+<div>{{title}}</div>
+
+<p>MY NAME IS LAKHAN</p>
+
+<div class="row">
+    <div class="col-12">
+        <form method="post">
+        {% csrf_token %}
+            <div>
+              <label for="">Value 1</label>
+                <input type="text" name="num1" value="{{n1}}" class="form-control" >
+            </div>
+            <br>
+            <div>
+              <label for="">Value 2</label>
+                <input type="text" name="num2" value="{{n2}}" class="form-control" >
+             </div>
+            <div class="pt-2">
+              <button type="submit">Save</button>
+            </div>
+            <div>
+                output
+                <input type="text" value="{{output}}" />
+            </div>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
